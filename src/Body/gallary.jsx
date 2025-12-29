@@ -3,7 +3,7 @@ import galleryDataJson from "../json-file-loop/Data-Loop.json";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const CATEGORY_MAP = {
-  "LOGO DESIGN" : ["Logo-Design"],
+  "LOGO DESIGN": ["Logo-Design"],
   "WEB DEVELOPMENT": ["Web-Design-Figma", "WEb-Design-Figma"],
   "PHOTO DESIGN": ["Photo-Editing"],
   ANIMATION: ["Animations"],
@@ -18,12 +18,14 @@ function Gallery() {
   const scrollRef = useRef(null);
   const [activeDot, setActiveDot] = useState(0);
 
+  // Handle window resize
   useEffect(() => {
     const resize = () => setIsMobile(window.innerWidth < 768);
     window.addEventListener("resize", resize);
     return () => window.removeEventListener("resize", resize);
   }, []);
 
+  // Clean data (determine type image/video)
   const cleanData = useMemo(
     () =>
       galleryDataJson.map((item) => ({
@@ -33,6 +35,7 @@ function Gallery() {
     []
   );
 
+  // Group data by group name and filter
   const groupedData = useMemo(() => {
     let data = cleanData;
     if (activeFilter !== "ALL") {
@@ -58,7 +61,7 @@ function Gallery() {
     document.body.style.overflow = activeGroup ? "hidden" : "auto";
   }, [activeGroup]);
 
-  // ================= THUMBNAIL DOTS =================
+  // Thumbnail dots
   const totalDots = groupItems.length
     ? Math.ceil(groupItems.length / Math.floor(window.innerWidth / 90))
     : 1;
@@ -70,25 +73,37 @@ function Gallery() {
     setActiveDot(Math.round(scrollLeft / containerWidth));
   };
 
+  // ---------------- HANDLE MODAL CLOSE ----------------
+  const handleClose = () => {
+    setActiveGroup(null); // close modal
+    setModalIndex(0);     // reset index
+  };
+
   return (
     <>
-<section id="portfolio" className="my-5 py-5 bg-text" data-text="04">
-      <div id="portfolio" className="section-header my-5 " data-aos="fade-up">
-        <div className="row justify-content-center g-5">
-          <div className="col-lg-4">
-            <span className="text-muted text-uppercase">some of my recent works</span>
-            <h2 className="display-2 txt-fx slide-up ">Portfolio</h2>
-          </div>
-          <div className="col-lg-4" data-aos="fade-up">
-            <p>
-              This project showcases my creative design style across logo design, photo editing, graphic design, motion graphics, and Figma UI/UX design. It highlights my problem-solving approach by turning ideas into visually engaging and user-friendly solutions. Each element tells a story, reflecting my ability to communicate concepts effectively through design.
-            </p>
-            {/* <a href="#gallary" className="btn btn-dark px-5 py-4">View All</a> */}
+      {/* ================= SECTION HEADER ================= */}
+      <section id="portfolio" className="my-5 py-5 bg-text" data-text="04">
+        <div id="portfolio" className="section-header my-5" data-aos="fade-up">
+          <div className="row justify-content-center g-5">
+            <div className="col-lg-4">
+              <span className="text-muted text-uppercase">
+                some of my recent works
+              </span>
+              <h2 className="display-2 txt-fx slide-up ">Portfolio</h2>
+            </div>
+            <div className="col-lg-4" data-aos="fade-up">
+              <p>
+                This project showcases my creative design style across logo
+                design, photo editing, graphic design, motion graphics, and
+                Figma UI/UX design. It highlights my problem-solving approach
+                by turning ideas into visually engaging and user-friendly
+                solutions. Each element tells a story, reflecting my ability to
+                communicate concepts effectively through design.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-</section>
-
+      </section>
 
       {/* ================= FILTER BUTTONS ================= */}
       <div style={{ textAlign: "center", margin: 30 }}>
@@ -123,7 +138,6 @@ function Gallery() {
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))",
           gap: 20,
-          // padding: 20,
         }}
       >
         {Object.entries(groupedData).map(([gid, items]) => {
@@ -150,7 +164,6 @@ function Gallery() {
                   src={preview.src}
                   style={{ width: "100%", height: 200, objectFit: "cover" }}
                   muted
-                  autoPlay
                   loop
                   playsInline
                 />
@@ -210,7 +223,7 @@ function Gallery() {
       {/* ================= MODAL ================= */}
       {activeGroup && activeItem && (
         <div
-          onClick={() => setActiveGroup(null)}
+          onClick={handleClose} // overlay click closes modal
           style={{
             position: "fixed",
             inset: 0,
@@ -221,11 +234,12 @@ function Gallery() {
           }}
         >
           <div
-            onClick={(e) => e.stopPropagation()}
+            onClick={(e) => e.stopPropagation()} // stop inner clicks
             style={{ maxWidth: 1200, margin: "auto", color: "#fff" }}
           >
+            {/* CLOSE BUTTON */}
             <button
-              onClick={() => setActiveGroup(null)}
+              onClick={handleClose}
               style={{
                 position: "fixed",
                 top: 20,
@@ -251,7 +265,6 @@ function Gallery() {
                 gap: 20,
               }}
             >
-              {/* IMAGE / VIDEO */}
               <div
                 style={{ position: "relative" }}
                 onMouseEnter={() => setHovered(true)}
@@ -261,8 +274,6 @@ function Gallery() {
                   <video
                     src={activeItem.src}
                     controls
-                    autoPlay
-                    loop
                     muted
                     preload="auto"
                     style={{ width: "100%" }}
@@ -275,7 +286,6 @@ function Gallery() {
                   />
                 )}
 
-                {/* OVERLAY ARROWS ONLY ON HOVER */}
                 {!isMobile && hovered && (
                   <>
                     <button
@@ -323,7 +333,6 @@ function Gallery() {
                 )}
               </div>
 
-              {/* TEXT */}
               <div style={{ marginTop: isMobile ? 15 : 0 }}>
                 <h4 style={{ color: "#fff" }}>{activeItem.title}</h4>
                 <p style={{ lineHeight: 1.6 }}>{activeItem.description}</p>
@@ -364,7 +373,7 @@ function Gallery() {
               </div>
             )}
 
-            {/* ================= THUMBNAILS WITH DOTS ================= */}
+            {/* THUMBNAILS */}
             <div
               ref={scrollRef}
               onScroll={handleScroll}
@@ -400,13 +409,13 @@ function Gallery() {
                       src={item.src}
                       style={{ width: "100%", height: "100%", objectFit: "cover" }}
                       muted
-                      loop
                       playsInline
                     />
                   ) : (
                     <img
                       src={item.src}
                       alt=""
+                      loading="lazy"
                       style={{ width: "100%", height: "100%", objectFit: "cover" }}
                     />
                   )}
@@ -415,7 +424,9 @@ function Gallery() {
             </div>
 
             {/* DOT INDICATORS */}
-            <div style={{ display: "flex", justifyContent: "center", gap: 6, marginTop: 8 }}>
+            <div
+              style={{ display: "flex", justifyContent: "center", gap: 6, marginTop: 8 }}
+            >
               {Array.from({ length: totalDots }).map((_, i) => (
                 <div
                   key={i}
