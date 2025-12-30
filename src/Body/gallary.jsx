@@ -279,6 +279,7 @@ function Gallery() {
                     src={activeItem.src}
                     controls
                     muted
+                    autoPlay
                     preload="auto"
                     style={{ width: "100%" }}
                   />

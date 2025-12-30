@@ -36,6 +36,9 @@ function BodyContent(){
                       </tr>
                     </tbody>
                   </table>
+                  <p>I’m Syed Ali, a passionate UI/UX Designer and Web Developer based in Chennai, India. I specialize in creating visually appealing, user-friendly, and responsive digital experiences. With a strong foundation in both design and development, I bridge the gap between creative ideas and functional solutions.
+
+I enjoy transforming complex problems into simple, intuitive designs and building scalable web applications using modern technologies. I’m constantly learning new tools and techniques to improve my craft and deliver high-quality results.</p>
                 </div>
               </div>
               <div class="col-lg-6">

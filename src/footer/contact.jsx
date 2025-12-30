@@ -27,7 +27,7 @@ function Contact(){
                       <div id="accordion-collapse1" class="accordion-collapse collapse show"
                         aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
                         <div class="accordion-body">
-                         I have strong hands-on experience in UI/UX design, graphic design, illustration,and motion graphics—working on real client projects, branding, logos, web designs, and mobile app interfaces.
+                         I have strong hands-on experience in <b>UI/UX design, graphic design</b>, <b>illustration</b>,and <b>motion graphics</b>—working on real client projects, <b>branding</b>, <b>logos</b>,<b>web designs</b>, and <b>mobile app interfaces</b>.
                          I’m continuously improving, exploring new tools, and creating designs that are modern, user-friendly, and visually impactful..
                         </div>
                       </div>
@@ -53,14 +53,14 @@ function Contact(){
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                           data-bs-target="#accordion-collapse3" aria-expanded="false"
                           aria-controls="accordion-collapse3">
-                          Do you have the capacity to take on this project right now?
+                         What are the tools you have handled?
                         </button>
                       </h2>
                       <div id="accordion-collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample2">
                         <div class="accordion-body">
-                          Yes, I currently have the capacity to take on this project and give it my full attention.
-                          I’m ready to start immediately and ensure the work is completed with high quality, clear communication, and timely delivery..
+                          I have hands-on experience with a wide range of design and development tools, including <b>Adobe Photoshop</b>,<b>Illustrator</b> ,<b>After Effects</b> , and <b>Figma for UI/UX design</b>.
+                           I also work with <b>HTML</b>,<b>CSS</b>,<b>JavaScript</b>,<b>React</b>, and <b>Git/GitHub</b> for web development. In addition, I have knowledge of <b>Java</b>, <b>SQL</b>, and <b>JDBC </b>for backend and database operations. These tools help me create visually appealing, responsive, and user-friendly digital experiences.
                         </div>
                       </div>
                     </div>

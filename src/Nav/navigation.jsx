@@ -80,7 +80,7 @@ function Navigation() {
           padding: "5px 12px",
           cursor: "pointer",
         }}
-        className="d-lg-none"
+        className="d-xl-none"
       >
         ☰
       </button>
@@ -97,12 +97,12 @@ function Navigation() {
           padding: "0 40px",
           background: "#fff",
           transform:
-            window.innerWidth <= 991 && !menuOpen
+            window.innerWidth <= 1024 && !menuOpen
               ? "translateX(-100%)"
               : "translateX(0)",
           transition: "transform 0.3s ease-in-out",
           boxShadow:
-            window.innerWidth <= 991
+            window.innerWidth <= 1024
               ? "2px 0 15px rgba(0,0,0,0.1)"
               : "none",
         }}
