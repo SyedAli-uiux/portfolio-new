@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
   faInstagram,
   faFacebookF,
@@ -137,8 +138,8 @@ function Navigation() {
                       onClick={() => setMenuOpen(false)}
                       style={navLinkStyle(item)}
                       onMouseEnter={(e) =>
-                        (e.currentTarget.lastChild.style.width =
-                          "100%")
+                      (e.currentTarget.lastChild.style.width =
+                        "100%")
                       }
                       onMouseLeave={(e) =>
                         active !== item &&
@@ -149,12 +150,12 @@ function Navigation() {
                       {item === "home"
                         ? "Home"
                         : item === "about"
-                        ? "About"
-                        : item === "experience"
-                        ? "Skillset & Toolset"
-                        : item === "portfolio"
-                        ? "Works"
-                        : "Contact"}
+                          ? "About"
+                          : item === "experience"
+                            ? "Skillset & Toolset"
+                            : item === "portfolio"
+                              ? "Works"
+                              : "Contact"}
 
                       <span style={underlineStyle(item)} />
                     </a>
@@ -197,6 +198,10 @@ function Navigation() {
                   icon: faPinterestP,
                   link: "https://pin.it/77xwAyuaa",
                 },
+                {
+                  icon: faGithub,
+                  link: "https://github.com/SyedAli-uiux/My_Design/tree/master/Git_Documents",
+                }
               ].map((item, i) => (
                 <a
                   key={i}
@@ -209,12 +214,12 @@ function Navigation() {
                     transition: "transform 0.3s ease",
                   }}
                   onMouseEnter={(e) =>
-                    (e.currentTarget.style.transform =
-                      "translateY(-3px)")
+                  (e.currentTarget.style.transform =
+                    "translateY(-3px)")
                   }
                   onMouseLeave={(e) =>
-                    (e.currentTarget.style.transform =
-                      "translateY(0)")
+                  (e.currentTarget.style.transform =
+                    "translateY(0)")
                   }
                 >
                   <FontAwesomeIcon icon={item.icon} />

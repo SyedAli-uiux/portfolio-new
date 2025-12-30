@@ -1,10 +1,19 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "src": "json-images/Logos/Sudha-clinic/Sudha-logo.jpg",
     "title": "Logo-Design",
     "subtitle": "Sudha-clinic",
-    "description": "“A clean, modern logo designed for a trusted clinic and diagnostic laboratory, reflecting precision, care, and professionalism.” ",
+    "description": "“A clean and modern logo created using Adobe Illustrator, designed after researching the clinic’s identity and carefully selecting colors to represent precision, care, and professionalism.”",
+    "group": "1"
+    
+  },
+  {
+    "id": 1,
+    "src": "json-images/Logo_mockup/sudha-logo-mocup.jpg",
+    "title": "Logo-Design",
+    "subtitle": "Sudha-clinic-mockup",
+    "description": "“A modern medical lab logo designed in Adobe Illustrator with a professional mockup created in Photoshop.”",
     "group": "1"
   },
   {
@@ -13,7 +22,8 @@
     "title": "Logo-Design",
     "subtitle": "Go Acadamy",
     "description": "“A minimal and classic logo representing a global learning academy focused on student growth and academic excellence.” ",
-    "group": "2"
+    "group": "2",
+    "link":"https://goacademyinternational.com/"
   },
   {
     "id": 3,
@@ -25,30 +35,14 @@
   },
   {
     "id": 4,
-    "src": "json-images/Logos/HS-Medical-Logo/Logo-2.jpg",
+    "src": "json-images/Logo_mockup/Hs-med-mocup.jpg",
     "title": "Logo-Design",
-    "subtitle": "Hermon Medical-Logo-2",
-    "description": "“A clean and modern logo representing a trusted medical and pharmacy brand focused on health, care, and reliability.” ",
+    "subtitle": "Hermon Medical-Logo-mockup",
+    "description": "“A clean and modern logo representing a trusted medical and pharmacy brand, with a professional mockup created in Adobe Photoshop.” ",
     "group": "3"
   },
   {
     "id": 5,
-    "src": "json-images/Logos/HS-Medical-Logo/Logo-3.jpg",
-    "title": "Logo-Design",
-    "subtitle": "Hermon Medical-Logo-3",
-    "description": "“A clean and modern logo representing a trusted medical and pharmacy brand focused on health, care, and reliability.” ",
-    "group": "3"
-  },
-  {
-    "id": 6,
-    "src": "json-images/Logos/HS-Medical-Logo/Logo-4.jpg",
-    "title": "Logo-Design",
-    "subtitle": "Hermon Medical-Logo-4",
-    "description": "“A clean and modern logo representing a trusted medical and pharmacy brand focused on health, care, and reliability.” ",
-    "group": "3"
-  },
-  {
-    "id": 7,
     "src": "json-images/Logos/Pet_Shop-LOGO/design-logo-1.jpg",
     "title": "Logo-Design",
     "subtitle": "Pet-Shop-Logo-1",
@@ -56,7 +50,7 @@
     "group": "4"
   },
   {
-    "id": 8,
+    "id": 6,
     "src": "json-images/Logos/Pet_Shop-LOGO/design-logo-2.jpg",
     "title": "Logo-Design",
     "subtitle": "Pet-Shop-Logo-2",
@@ -64,23 +58,31 @@
     "group": "4"
   },
   {
-    "id": 9,
-    "src": "json-images/Logos/Pet_Shop-LOGO/design-logo-3.jpg",
+    "id": 7,
+    "src": "json-images/Logo_mockup/ddr-logo-mocup.jpg",
     "title": "Logo-Design",
-    "subtitle": "Pet-Shop-Logo-3",
-    "description": "“A clean and playful logo designed for a pet shop, symbolizing care, companionship, and animal love.” ",
+    "subtitle": "Pet-Shop-Logo-mockup",
+    "description": "“A professional logo mockup created in Adobe Photoshop to present the pet shop branding.” ",
     "group": "4"
   },
   {
-    "id": 10,
+    "id": 8,
     "src": "json-images/Logos/Ruposy-global-Logo/Logo-1.jpg",
     "title": "Logo-Design",
-    "subtitle": "Ruposy-global-Logo-1",
-    "description": "“A clean and playful logo designed for a pet shop, symbolizing care, companionship, and animal love.” ",
+    "subtitle": "Ruposy-global-Logo",
+    "description": "“A modern solution-focused logo designed for Ruposy Global, representing innovation, reliability, and global connectivity.”",
     "group": "5"
   },
   {
-    "id": 11,
+    "id": 8,
+    "src": "json-images/Logos/Ruposy-global-Logo/Logo-1.jpg",
+    "title": "Logo-Design",
+    "subtitle": "Ruposy-global-Logo-mockup",
+    "description": "“A professional logo mockup created in Adobe Photoshop to showcase the Ruposy Global brand.” ",
+    "group": "5"
+  },
+  {
+    "id": 9,
     "src": "json-images/Logos/Student_Management-System/Student-management-hs-logo.jpg",
     "title": "Logo-Design",
     "subtitle": "Student_Management-System-Logo",
@@ -88,7 +90,7 @@
     "group": "6"
   },
   {
-    "id": 12,
+    "id": 10,
     "src": "json-images/Logos/Verify-zone-Logo/final-logo-here.jpg",
     "title": "Logo-Design",
     "subtitle": "Verify-zone-Logo-1",
@@ -96,23 +98,15 @@
     "group": "7"
   },
   {
-    "id": 13,
-    "src": "json-images/Logos/Verify-zone-Logo/logos-1.jpg",
+    "id": 11,
+    "src": "json-images/Logo_mockup/verifyzone-logo-mocup.jpg",
     "title": "Logo-Design",
-    "subtitle": "Verify-zone-Logo-2",
-    "description": "“A clean and modern logo representing a trusted HR verification platform focused on accuracy, credibility, and secure employee screening.” ",
+    "subtitle": "Verify-zone-Logo-mockup",
+    "description": "“A professional logo mockup created in Adobe Photoshop to present the HR verification brand.” ",
     "group": "7"
   },
   {
-    "id": 14,
-    "src": "json-images/Logos/Verify-zone-Logo/logos-2.jpg",
-    "title": "Logo-Design",
-    "subtitle": "Verify-zone-Logo-3",
-    "description": "“A clean and modern logo representing a trusted HR verification platform focused on accuracy, credibility, and secure employee screening.” ",
-    "group": "7"
-  },
-  {
-    "id": 15,
+    "id": 12,
     "src": "json-images/Logos/Work-Of-Wisdom/work-of-wisdom-logo-design.jpg",
     "title": "Logo-Design",
     "subtitle": "Work-Of-Wisdom-Logo",
@@ -120,9 +114,17 @@
     "group": "8"
   },
   {
+    "id": 13,
+    "src": "json-images/Logo_mockup/wow-mocup.jpg",
+    "title": "Logo-Design",
+    "subtitle": "Work-Of-Wisdom-Logo-mockup",
+    "description": "“A professional security logo mockup created in Adobe Photoshop.” ",
+    "group": "8"
+  },
+  {
     "id": 16,
     "src": "json-images/Photo_Editing/photo-design-1.jpg",
-    "title": "Photo-Editing",
+    "title": "GRAPHIC DESIGN",
     "subtitle": "Photo-Design",
     "description": "“A clean and stylish design symbolizing creative photo retouching, visual enhancement, and graphic design expertise.” ",
     "group": "9"
@@ -130,23 +132,25 @@
   {
     "id": 17,
     "src": "json-images/Photo_Editing/photo-design-2.jpeg",
-    "title": "Photo-Editing",
+    "title": "GRAPHIC DESIGN",
     "subtitle": "Photo-Design",
     "description": "“A clean and stylish design symbolizing creative photo retouching, visual enhancement, and graphic design expertise.” ",
-    "group": "9"
+    "group": "9",
+    "link":"https://pin.it/1pTi8szcC"
   },
   {
     "id": 18,
     "src": "json-images/Photo_Editing/photo-design-3.jpeg",
-    "title": "Photo-Editing",
+    "title": "GRAPHIC DESIGN",
     "subtitle": "Photo-Design",
     "description": "“A clean and stylish design symbolizing creative photo retouching, visual enhancement, and graphic design expertise.” ",
-    "group": "9"
+    "group": "9",
+    "link":"https://pin.it/59YT4J3GT"
   },
   {
     "id": 19,
     "src": "json-images/Photo_Editing/photo-design-4.jpeg",
-    "title": "Photo-Editing",
+    "title": "GRAPHIC DESIGN",
     "subtitle": "Photo-Design",
     "description": "“A clean and stylish design symbolizing creative photo retouching, visual enhancement, and graphic design expertise.” ",
     "group": "9"
@@ -154,7 +158,7 @@
   {
     "id": 20,
     "src": "json-images/Photo_Editing/photo-design-5.jpeg",
-    "title": "Photo-Editing",
+    "title": "GRAPHIC DESIGN",
     "subtitle": "Photo-Design",
     "description": "“A clean and stylish design symbolizing creative photo retouching, visual enhancement, and graphic design expertise.” ",
     "group": "9"
@@ -162,7 +166,7 @@
   {
     "id": 21,
     "src": "json-images/Photo_Editing/photo-design-6.jpeg",
-    "title": "Photo-Editing",
+    "title": "GRAPHIC DESIGN",
     "subtitle": "Photo-Design",
     "description": "“A clean and stylish design symbolizing creative photo retouching, visual enhancement, and graphic design expertise.” ",
     "group": "9"
@@ -170,7 +174,7 @@
   {
     "id": 22,
     "src": "json-images/Photo_Editing/photo-design-7.jpg",
-    "title": "Photo-Editing",
+    "title": "GRAPHIC DESIGN",
     "subtitle": "Photo-Design",
     "description": "“A clean and stylish design symbolizing creative photo retouching, visual enhancement, and graphic design expertise.” ",
     "group": "9"
@@ -179,14 +183,14 @@
     "id": 23,
     "src": "json-images/Photo_Editing/photo-design-8.jpg",
     "title": "Photo-Editing",
-    "subtitle": "Photo-Design",
+    "subtitle": "GRAPHIC DESIGN",
     "description": "“A clean and stylish design symbolizing creative photo retouching, visual enhancement, and graphic design expertise.” ",
     "group": "9"
   },
   {
     "id": 24,
     "src": "json-images/Photo_Editing/photo-design-9.jpg",
-    "title": "Photo-Editing",
+    "title": "GRAPHIC DESIGN",
     "subtitle": "Photo-Design",
     "description": "“A clean and stylish design symbolizing creative photo retouching, visual enhancement, and graphic design expertise.” ",
     "group": "9"
@@ -194,7 +198,7 @@
   {
     "id": 25,
     "src": "json-images/Photo_Editing/photo-design-10.jpg",
-    "title": "Photo-Editing",
+    "title": "GRAPHIC DESIGN",
     "subtitle": "Photo-Design",
     "description": "“A clean and stylish design symbolizing creative photo retouching, visual enhancement, and graphic design expertise.” ",
     "group": "9"
@@ -251,7 +255,7 @@
     "id": 32,
     "src": "json-images/Web-design(figma)/Hermon_Solution-Login-page/Hs-verification-design-1.jpg",
     "title": "Web-Design-Figma",
-    "subtitle": "Hermon_Solution-verification-page-1",
+    "subtitle": "Hermon_Solution-verification-page-2",
     "description": "“A clean and modern login page design for Hermon Solution, focused on simplicity, user-friendly access, and secure authentication.” ",
     "group": "11"
   },
@@ -259,7 +263,7 @@
     "id": 33,
     "src": "json-images/Web-design(figma)/Hermon_Solution-Login-page/Hs-verification-design-2.jpg",
     "title": "Web-Design-Figma",
-    "subtitle": "Hermon_Solution-verification-page-2",
+    "subtitle": "Hermon_Solution-verification-page-3",
     "description": "“A clean and modern login page design for Hermon Solution, focused on simplicity, user-friendly access, and secure authentication.” ",
     "group": "11"
   },
@@ -345,14 +349,6 @@
   },
   {
     "id": 44,
-    "src": "json-images/Animations/Go_Acadamy-Logo-Animation.mp4",
-    "title": "Animations",
-    "subtitle": "Logo-Animation",
-    "description": "“A minimal and modern landing page design for work-of-wisdom , clearly informing users while maintaining brand aesthetics.” ",
-    "group": "14"
-  },
-  {
-    "id": 45,
     "src": "json-images/Animations/Loder-Animation.mp4",
     "title": "Animations",
     "subtitle": "Loder-Animation",
@@ -360,11 +356,78 @@
     "group": "14"
   },
   {
+    "id": 45,
+    "src": "json-images/Animations/Go_Acadamy-Logo-Animation.mp4",
+    "title": "Animations",
+    "subtitle": "Logo-Animation",
+    "description": "“A minimal and modern landing page design for work-of-wisdom , clearly informing users while maintaining brand aesthetics.” ",
+    "group": "15"
+  },
+  
+  {
     "id": 46,
     "src": "json-images/Animations/Slider-Animation.mp4",
     "title": "Animations",
     "subtitle": "Slider-Animation",
     "description": "“A minimal and modern landing page design for work-of-wisdom , clearly informing users while maintaining brand aesthetics.” ",
-    "group": "14"
+    "group": "16"
+  },
+  {
+    "id": 47,
+    "src": "json-images/mockup/klassride.jpg",
+    "title": "GRAPHIC DESIGN",
+    "subtitle": "Taxi App Website-Mocup",
+    "description": "“A mobile app mockup for the Edition Awards project, completed for Hermon Solutions, showcasing interactive voting and real-time results.” ",
+    "group": "17",
+    "link":"https://hermonsolutions.com/case/details/30"
+  },
+   {
+    "id": 48,
+    "src": "json-images/mockup/amazon-selling-website.jpg",
+    "title": "GRAPHIC DESIGN",
+    "subtitle": "Amazon-Selling Website-mocup",
+    "description": "“A responsive Amazon partner platform mockup created for Hermon Solution, highlighting product management and analytics.” ",
+    "group": "17",
+    "link":"https://hermonsolutions.com/case/details/4"
+  },
+  {
+    "id": 49,
+    "src": "json-images/mockup/edizon-award.jpg",
+    "title": "GRAPHIC DESIGN",
+    "subtitle": "Edizon Awards Website-Mocup",
+    "description": "“Edition Awards mobile app mockup highlighting interactive voting and real-time results.” ",
+    "group": "17",
+    "link":"https://hermonsolutions.com/case/details/23"
+  },
+  {
+    "id": 50,
+    "src": "json-images/mockup/pink-psd.jpg",
+    "title": "GRAPHIC DESIGN",
+    "subtitle": "Pink-Celebrity Website-Mocup",
+    "description": "“Edition Awards mobile app mockup created for Hermon Solutions, highlighting interactive voting and real-time results.” ",
+    "group": "17",
+    "link":"https://hermonsolutions.com/case/details/28"
+  },
+  {
+    "id": 51,
+    "src": "json-images/mockup/PROVITE-page-1.jpg",
+    "title": "GRAPHIC DESIGN",
+    "subtitle": "Provite Website-Mocup",
+    "description": "A mobile app developed for Hermon Solutions to streamline animal healthcare management for vets and pet owners. ",
+    "group": "17",
+    "link":"https://hermonsolutions.com/case/details/15"
+  },
+  {
+    "id": 52,
+    "src": "json-images/mockup/psd-achi-food-page-1.jpg",
+    "title": "GRAPHIC DESIGN",
+    "subtitle": "Lakshimi Aachi Website-Mocup",
+    "description": "“A responsive e-commerce website mockup for Lakshmi Aachi, combining traditional sweets and snacks with custom graphic design for a visually appealing shopping experience.” ",
+    "group": "17",
+    "link":"https://hermonsolutions.com/case-study"
   }
+ 
+    
+
+  
 ]

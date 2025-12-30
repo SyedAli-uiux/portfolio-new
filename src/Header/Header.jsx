@@ -27,7 +27,7 @@ function Header(){
                 </div> */}
 
                 <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                  <span>03</span>
+                  <span>01</span>
                   <h3 class="sub-heading">Graphic Design/motion Graphic</h3>
                   <p>Creating professional graphics and lightweight motion elements for websites and apps.
                     <br />
@@ -51,7 +51,7 @@ function Header(){
                 </div> */}
 
                 <div class="icon-box" data-aos="fade-up">
-                  <span>01</span>
+                  <span>03</span>
                   <h3 class="sub-heading">UI/UX Design</h3>
                   <p>Designing intuitive and user-friendly interfaces through wireframing, prototyping, and usability principles.</p>
                 </div>

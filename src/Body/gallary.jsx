@@ -5,7 +5,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 const CATEGORY_MAP = {
   "LOGO DESIGN": ["Logo-Design"],
   "WEB DEVELOPMENT": ["Web-Design-Figma", "WEb-Design-Figma"],
-  "PHOTO DESIGN": ["Photo-Editing"],
+  "GRAPHIC DESIGN": ["GRAPHIC DESIGN"],
   ANIMATION: ["Animations"],
 };
 
@@ -106,8 +106,8 @@ function Gallery() {
       </section>
 
       {/* ================= FILTER BUTTONS ================= */}
-      <div style={{ textAlign: "center", margin: 30 }}>
-        {["ALL", "LOGO DESIGN", "WEB DEVELOPMENT", "PHOTO DESIGN", "ANIMATION"].map(
+      <div style={{ textAlign: "center", margin: 30 }} >
+        {["ALL", "LOGO DESIGN", "WEB DEVELOPMENT", "GRAPHIC DESIGN", "ANIMATION"].map(
           (f) => (
             <button
               key={f}
@@ -138,7 +138,9 @@ function Gallery() {
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))",
           gap: 20,
+          
         }}
+        data-aos="fade-up"
       >
         {Object.entries(groupedData).map(([gid, items]) => {
           const preview = items[0];
@@ -166,6 +168,7 @@ function Gallery() {
                   muted
                   loop
                   playsInline
+                  
                 />
               ) : (
                 <img
@@ -180,10 +183,11 @@ function Gallery() {
                 <p style={{ fontSize: 14, color: "#555", marginBottom: 12 }}>
                   {preview.description}
                 </p>
+                 
               </div>
 
               {!isMobile && (
-                <div style={{ padding: "0 14px 14px 14px" }}>
+                <div style={{ padding: "0 14px 14px 14px" }} >
                   <button
                     style={{
                       padding: "8px 18px",
@@ -334,8 +338,10 @@ function Gallery() {
               </div>
 
               <div style={{ marginTop: isMobile ? 15 : 0 }}>
-                <h4 style={{ color: "#fff" }}>{activeItem.title}</h4>
+                <h4 style={{ color: "#fcf804ff" }}>{activeItem.title}</h4>
                 <p style={{ lineHeight: 1.6 }}>{activeItem.description}</p>
+                <a href={activeItem.link}  target="_blank" style={{ color: "#fcf804ff" }}>
+                <p style={{ lineHeight: 1.6 ,fontWeight: "700"}}> {activeItem.link}  </p></a>
               </div>
             </div>
 
