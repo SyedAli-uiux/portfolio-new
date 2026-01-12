@@ -6,7 +6,6 @@
     "subtitle": "Sudha-clinic",
     "description": "“A clean and modern logo created using Adobe Illustrator, designed after researching the clinic’s identity and carefully selecting colors to represent precision, care, and professionalism.”",
     "group": "1"
-    
   },
   {
     "id": 1,
@@ -23,7 +22,7 @@
     "subtitle": "Go Acadamy",
     "description": "“A minimal and classic logo representing a global learning academy focused on student growth and academic excellence.” ",
     "group": "2",
-    "link":"https://goacademyinternational.com/"
+    "link": "https://goacademyinternational.com/"
   },
   {
     "id": 3,
@@ -136,7 +135,7 @@
     "subtitle": "Photo-Design",
     "description": "“A clean and stylish design symbolizing creative photo retouching, visual enhancement, and graphic design expertise.” ",
     "group": "9",
-    "link":"https://pin.it/1pTi8szcC"
+    "link": "https://pin.it/1pTi8szcC"
   },
   {
     "id": 18,
@@ -145,7 +144,7 @@
     "subtitle": "Photo-Design",
     "description": "“A clean and stylish design symbolizing creative photo retouching, visual enhancement, and graphic design expertise.” ",
     "group": "9",
-    "link":"https://pin.it/59YT4J3GT"
+    "link": "https://pin.it/59YT4J3GT"
   },
   {
     "id": 19,
@@ -363,7 +362,6 @@
     "description": "“A minimal and modern landing page design for work-of-wisdom , clearly informing users while maintaining brand aesthetics.” ",
     "group": "15"
   },
-  
   {
     "id": 46,
     "src": "json-images/Animations/Slider-Animation.mp4",
@@ -379,16 +377,16 @@
     "subtitle": "Taxi App Website-Mocup",
     "description": "“A mobile app mockup for the Edition Awards project, completed for Hermon Solutions, showcasing interactive voting and real-time results.” ",
     "group": "17",
-    "link":"https://hermonsolutions.com/case/details/30"
+    "link": "https://hermonsolutions.com/case/details/30"
   },
-   {
+  {
     "id": 48,
     "src": "json-images/mockup/amazon-selling-website.jpg",
     "title": "GRAPHIC DESIGN",
     "subtitle": "Amazon-Selling Website-mocup",
     "description": "“A responsive Amazon partner platform mockup created for Hermon Solution, highlighting product management and analytics.” ",
     "group": "17",
-    "link":"https://hermonsolutions.com/case/details/4"
+    "link": "https://hermonsolutions.com/case/details/4"
   },
   {
     "id": 49,
@@ -397,7 +395,7 @@
     "subtitle": "Edizon Awards Website-Mocup",
     "description": "“Edition Awards mobile app mockup highlighting interactive voting and real-time results.” ",
     "group": "17",
-    "link":"https://hermonsolutions.com/case/details/23"
+    "link": "https://hermonsolutions.com/case/details/23"
   },
   {
     "id": 50,
@@ -406,7 +404,7 @@
     "subtitle": "Pink-Celebrity Website-Mocup",
     "description": "“Edition Awards mobile app mockup created for Hermon Solutions, highlighting interactive voting and real-time results.” ",
     "group": "17",
-    "link":"https://hermonsolutions.com/case/details/28"
+    "link": "https://hermonsolutions.com/case/details/28"
   },
   {
     "id": 51,
@@ -415,7 +413,7 @@
     "subtitle": "Provite Website-Mocup",
     "description": "A mobile app developed for Hermon Solutions to streamline animal healthcare management for vets and pet owners. ",
     "group": "17",
-    "link":"https://hermonsolutions.com/case/details/15"
+    "link": "https://hermonsolutions.com/case/details/15"
   },
   {
     "id": 52,
@@ -424,10 +422,14 @@
     "subtitle": "Lakshimi Aachi Website-Mocup",
     "description": "“A responsive e-commerce website mockup for Lakshmi Aachi, combining traditional sweets and snacks with custom graphic design for a visually appealing shopping experience.” ",
     "group": "17",
-    "link":"https://hermonsolutions.com/case-study"
+    "link": "https://hermonsolutions.com/case-study"
+  },
+  {
+    "id": 53,
+    "src": "json-images/Animations/Hs-logo-animation-bg.mp4",
+    "title": "Animations",
+    "subtitle": "Logo-Animation",
+    "description": "“We created a clean and modern logo animation for Hermon Solutions, designed to reflect innovation, technology, and brand identity.The animation focuses on smooth motion, balanced timing, and visual consistency to enhance brand recognition across digital platforms.” ",
+    "group": "18"
   }
- 
-    
-
-  
 ]
