@@ -280,8 +280,8 @@ function Gallery() {
                     controls
                     muted
                     autoPlay
-                    // preload="auto"
-                     preload="metadata"
+                    preload="auto"
+                    //  preload="metadata"
                     style={{ width: "100%" }}
                   />
                 ) : (
