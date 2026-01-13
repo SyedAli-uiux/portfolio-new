@@ -296,7 +296,8 @@ function Contact() {
               </a>
               
               <a
-                href="https://wa.me/919884981113?text=Hi%2C%20I%27d%20like%20to%20discuss%20a%20project%20with%20you"
+              href="https://wa.me/919884981113?text=Hi!%20Thanks%20for%20visiting%20my%20portfolio.%20I’d%20be%20happy%20to%20discuss%20your%20project."
+
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => setHoveredBtn('whatsapp')}
