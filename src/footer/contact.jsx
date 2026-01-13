@@ -24,7 +24,7 @@ function Contact() {
       icon: Mail,
       title: 'Email',
       value: 'syedali1820010@gmail.com',
-      link: 'syedali1820010@gmail.com',
+      link: 'mailto:syedali1820010@gmail.com',
       bgColor: '#eff6ff',
       iconColor: '#2563eb',
     },
