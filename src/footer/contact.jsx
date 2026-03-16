@@ -59,12 +59,14 @@ function Contact() {
 
   return (
     <section 
-      id="contact" 
+      id="contact"
+       data-aos="fade-up"
       style={{
         padding: '80px 16px',
         background: 'linear-gradient(to bottom right, #f8fafc, #ffffff, #f1f5f9)',
         overflow: 'hidden',
-        position: 'relative'
+        position: 'relative',
+        
       }}
     >
       {/* Animated Background Elements */}
@@ -95,7 +97,7 @@ function Contact() {
         }}></div>
       </div>
 
-      <div style={{ maxWidth: '1280px', margin: '0 auto', position: 'relative', zIndex: 10 }}>
+      <div  style={{ maxWidth: '1280px', margin: '0 auto', position: 'relative', zIndex: 10 }}>
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '64px' }}>
           <div style={{
@@ -230,7 +232,7 @@ function Contact() {
         </div>
 
         {/* Direct Message Links */}
-        <div style={{ maxWidth: '896px', margin: '48px auto 0' }}>
+        <div data-aos="fade-up" style={{ maxWidth: '896px', margin: '48px auto 0' }}>
           <div style={{
             background: 'linear-gradient(to right, #2563eb, #9333ea)',
             borderRadius: '24px',
