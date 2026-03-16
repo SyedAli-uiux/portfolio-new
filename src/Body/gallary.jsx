@@ -280,6 +280,7 @@ function Gallery() {
                     controls
                     muted
                     autoPlay
+                    loop
                     preload="auto"
                     //  preload="metadata"
                     style={{ width: "100%" }}
@@ -418,6 +419,8 @@ function Gallery() {
                       style={{ width: "100%", height: "100%", objectFit: "cover" }}
                       muted
                       playsInline
+                      auto play
+                      loop
                     />
                   ) : (
                     <img
