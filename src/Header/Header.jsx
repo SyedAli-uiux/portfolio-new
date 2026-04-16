@@ -59,7 +59,7 @@ function Header(){
               <div class="col-lg-3">
                 <a href="#portfolio" class="btn btn-dark text-uppercase py-4 px-5" data-aos="fade-up" data-aos-delay="300">View All Work</a>
               </div>
-              
+             
               <div class="col-lg-3 mt-4">
                 <a href="https://drive.google.com/file/d/1YZ9451UkkQ0FOibLKQnVBB_J3cDyreJN/view?usp=drivesdk" class="btn btn-dark text-uppercase py-4 px-5" data-aos="fade-up" data-aos-delay="300">View Resume</a>
               </div>
