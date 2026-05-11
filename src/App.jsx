@@ -5,12 +5,9 @@ import Navigation from "./Nav/navigation";
 import Header from "./Header/Header";
 import BioData from "./Body/BioData";
 import BodyContent from "./Body/BodyContent";
-// import Portfolio from "./Body/Portfolio";
 import Contact from "./footer/contact";
-// import ProjectExperience from "./Body/gallary";
 import Gallary from "./Body/gallary";
-
-
+import UIProject_Component from "./Body/Uiproject";
 function Main() {
   useEffect(() => {
     AOS.init({ duration: 800 });
@@ -205,9 +202,13 @@ function Main() {
                 {/* <Portfolio /> */}
 
                 <Gallary />
+
+                <UIProject_Component />
                 {/* Contact Component  */}
                 <Contact />
+               
 
+                  
 
               {/* </div> */}
               {/* <!-- / content wrapper --> */}

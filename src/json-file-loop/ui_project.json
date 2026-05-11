@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "title": "Taxi App",
+    "thumbnail": "public/json-images/ui_ux_image/klass_ride/klass_ride_thumbline-1.png",
+    "link":"https://hermonsolutions.com/case/details/30",
+    "content": [
+      
+      
+      {
+        "type": "image",
+        "src": "json-images/ui_ux_image/klass_ride/klass-ride-case-study-1.png"
+      },
+      {
+        "type": "image",
+        "src": "json-images/ui_ux_image/klass_ride/klass-ride-case-study-2.jpg"
+      },
+      {
+        "type": "image",
+        "src": "json-images/ui_ux_image/klass_ride/klass-ride-case-study-3.png"
+      },
+      {
+        "type": "image",
+        "src": "json-images/ui_ux_image/klass_ride/klass-ride-case-study-4.jpg"
+      },
+      {
+        "type": "image",
+        "src": "json-images/ui_ux_image/klass_ride/klass-ride-case-study-5.jpg"
+      },
+      {
+        "type": "image",
+        "src": "json-images/ui_ux_image/klass_ride/klass-ride-case-study-6.jpg"
+      }
+    ]
+  },
+   
+   
+   {
+    "id": 2,
+    "title": "Edison Awards",
+    "link":"https://hermonsolutions.com/case/details/23",
+    "thumbnail": "public/json-images/ui_ux_image/edison-award/edison-tumbline.png",
+    "content": [
+      
+
+      {
+        "type": "image",
+        "src": "public/json-images/ui_ux_image/edison-award/edison-casestudy.png"
+      },
+      {
+        "type": "image",
+        "src": "public/json-images/ui_ux_image/edison-award/edison-casestudy-2.png"
+      }
+    ]
+  },
+
+   {
+    "id": 3,
+    "title": "Provet",
+    "thumbnail": "public/json-images/ui_ux_image/provet/tumbline-provet.png",
+    "link":"https://hermonsolutions.com/case/details/15",
+    "content": [
+      
+
+      {
+        "type": "image",
+        "src": "public/json-images/ui_ux_image/provet/provet-case-study.png"
+      },
+      {
+        "type": "image",
+        "src": "public/json-images/ui_ux_image/provet/provet-case-study-2.png"
+      }
+    ]
+  }
+  
+]

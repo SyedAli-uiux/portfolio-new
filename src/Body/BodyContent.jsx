@@ -28,7 +28,7 @@ function BodyContent(){
                       </tr>
                       <tr>
                         <th>E-mail</th>
-                        <td><a href="#">syedali1820010@gmail.com <br />syeduiuxdev@gmail.com</a></td>
+                        <td><a href="mailto:syedali1820010@gmail.com">syedali1820010@gmail.com </a></td>
                       </tr>
                       <tr class="no-border-bottom">
                         <th>Phone</th>
