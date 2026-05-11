@@ -39,17 +39,17 @@
     "id": 2,
     "title": "Edison Awards",
     "link":"https://hermonsolutions.com/case/details/23",
-    "thumbnail": "public/json-images/ui_ux_image/edison-award/edison-tumbline.png",
+    "thumbnail": "json-images/ui_ux_image/edison-award/edison-tumbline.png",
     "content": [
       
 
       {
         "type": "image",
-        "src": "public/json-images/ui_ux_image/edison-award/edison-casestudy.png"
+        "src": "json-images/ui_ux_image/edison-award/edison-casestudy.png"
       },
       {
         "type": "image",
-        "src": "public/json-images/ui_ux_image/edison-award/edison-casestudy-2.png"
+        "src": "json-images/ui_ux_image/edison-award/edison-casestudy-2.png"
       }
     ]
   },
@@ -57,18 +57,18 @@
    {
     "id": 3,
     "title": "Provet",
-    "thumbnail": "public/json-images/ui_ux_image/provet/tumbline-provet.png",
+    "thumbnail": "json-images/ui_ux_image/provet/tumbline-provet.png",
     "link":"https://hermonsolutions.com/case/details/15",
     "content": [
       
 
       {
         "type": "image",
-        "src": "public/json-images/ui_ux_image/provet/provet-case-study.png"
+        "src": "json-images/ui_ux_image/provet/provet-case-study.png"
       },
       {
         "type": "image",
-        "src": "public/json-images/ui_ux_image/provet/provet-case-study-2.png"
+        "src": "json-images/ui_ux_image/provet/provet-case-study-2.png"
       }
     ]
   }
