@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../assets/images/main-logo.png";
 
-const sections = ["home", "about", "experience", "portfolio", "contact"];
+const sections = ["home", "about", "experience", "portfolio", "uiux", "contact"];
 
 function Navigation() {
   const [active, setActive] = useState("home");
@@ -44,6 +44,15 @@ function Navigation() {
     return () => observer.disconnect();
   }, []);
 
+  const navLabels = {
+    home: "Home",
+    about: "About",
+    experience: "Skillset & Toolset",
+    portfolio: "Graphic Design",
+    uiux: "UI/UX Design",
+    contact: "Contact",
+  };
+
   const navLinkStyle = (id) => ({
     position: "relative",
     display: "inline-block",
@@ -54,7 +63,6 @@ function Navigation() {
   });
 
   const underlineStyle = (id) => ({
-    content: '""',
     position: "absolute",
     left: 0,
     bottom: 0,
@@ -120,11 +128,7 @@ function Navigation() {
             {/* LOGO */}
             <div style={{ marginTop: 40 }}>
               <a href="#home" onClick={() => setMenuOpen(false)}>
-                {/* <img
-                  src="/src/assets/images/main-logo.png"
-                  alt="logo"
-                  width={130}
-                /> */}<img src={logo} alt="logo" width={130} />
+                <img src={logo} alt="logo" width={130} />
               </a>
             </div>
 
@@ -138,8 +142,8 @@ function Navigation() {
                       onClick={() => setMenuOpen(false)}
                       style={navLinkStyle(item)}
                       onMouseEnter={(e) =>
-                      (e.currentTarget.lastChild.style.width =
-                        "100%")
+                        (e.currentTarget.lastChild.style.width =
+                          "100%")
                       }
                       onMouseLeave={(e) =>
                         active !== item &&
@@ -147,16 +151,7 @@ function Navigation() {
                           "0%")
                       }
                     >
-                      {item === "home"
-                        ? "Home"
-                        : item === "about"
-                          ? "About"
-                          : item === "experience"
-                            ? "Skillset & Toolset"
-                            : item === "portfolio"
-                              ? "Works"
-                              : "Contact"}
-
+                      {navLabels[item]}
                       <span style={underlineStyle(item)} />
                     </a>
                   </li>
@@ -184,24 +179,24 @@ function Navigation() {
               {[
                 {
                   icon: faInstagram,
-                  link: "https://www.instagram.com/mr__o_p_t_i_m_i_s_m?igsh=MWU5amQxdmluZTY3Yw==",
+                  link: "https://www.instagram.com/",
                 },
                 {
                   icon: faFacebookF,
-                  link: "https://www.facebook.com/share/17oQ9efCrk/",
+                  link: "https://www.facebook.com/",
                 },
                 {
                   icon: faXTwitter,
-                  link: "https://x.com/syedsn001?s=21",
+                  link: "https://x.com/",
                 },
                 {
                   icon: faPinterestP,
-                  link: "https://pin.it/77xwAyuaa",
+                  link: "https://pinterest.com/",
                 },
                 {
                   icon: faGithub,
-                  link: "https://github.com/SyedAli-uiux/My_Design/tree/master/Git_Documents",
-                }
+                  link: "https://github.com/",
+                },
               ].map((item, i) => (
                 <a
                   key={i}
@@ -214,12 +209,12 @@ function Navigation() {
                     transition: "transform 0.3s ease",
                   }}
                   onMouseEnter={(e) =>
-                  (e.currentTarget.style.transform =
-                    "translateY(-3px)")
+                    (e.currentTarget.style.transform =
+                      "translateY(-3px)")
                   }
                   onMouseLeave={(e) =>
-                  (e.currentTarget.style.transform =
-                    "translateY(0)")
+                    (e.currentTarget.style.transform =
+                      "translateY(0)")
                   }
                 >
                   <FontAwesomeIcon icon={item.icon} />

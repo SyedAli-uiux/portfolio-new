@@ -87,18 +87,16 @@ function Gallery() {
           <div className="row justify-content-center g-5">
             <div className="col-lg-4">
               <span className="text-muted text-uppercase">
-                some of my recent works
+                Some of my recent graphic design works
               </span>
               <h2 className="display-2 txt-fx slide-up ">Portfolio</h2>
             </div>
             <div className="col-lg-4" data-aos="fade-up">
               <p>
-                This project showcases my creative design style across logo
-                design, photo editing, graphic design, motion graphics, and
-                Figma UI/UX design. It highlights my problem-solving approach
-                by turning ideas into visually engaging and user-friendly
-                solutions. Each element tells a story, reflecting my ability to
-                communicate concepts effectively through design.
+               This project showcases my creative approach in graphic design, including logo design, photo editing, 
+               motion graphics, and video editing. It reflects my ability to transform ideas into visually engaging and 
+               meaningful designs. Each work highlights my creativity, attention to detail, and storytelling through visual 
+               communication.
               </p>
             </div>
           </div>

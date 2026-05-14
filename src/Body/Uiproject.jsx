@@ -1,13 +1,14 @@
 import { useState } from "react";
-import projects from "../json-file-loop/ui_project.json"
+import projects from "../json-file-loop/ui_project.json";
+import { motion, AnimatePresence } from "framer-motion";
+
 function UIProject_Component() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   return (
     <>
-    {/* tumbline-size-1200px 1500px  */}
-    {/* main-tumbline- 1440px width Unlimited height  this for image creation (1536px 1024px)*/}
-      <div
+      {/* MAIN SECTION */}
+      <div id="uiux" data-aos="fade-up"
         style={{
           width: "100%",
           minHeight: "100vh",
@@ -17,60 +18,29 @@ function UIProject_Component() {
           fontFamily: "Inter, sans-serif",
         }}
       >
+        {/* HEADER */}
         <div
-             style={{
-                maxWidth: "720px",
-                margin: "0 auto 60px",
-                textAlign: "center",
-                padding: "0 20px",
-             }}
+          style={{
+            maxWidth: "720px",
+            margin: "0 auto 60px",
+            textAlign: "center",
+            padding: "0 20px",
+          }}
         >
-          <p
-            style={{
-              fontSize: "12px",
-              letterSpacing: "4px",
-              color: "#8d8d8d",
-              marginBottom: "18px",
-            }}
-          >
+          <p style={{ fontSize: "12px", letterSpacing: "4px", color: "#8d8d8d" }}>
             PORTFOLIO
           </p>
 
-          <h1
-            style={{
-              fontSize: "clamp(42px, 6vw, 76px)",
-              lineHeight: "0.95",
-              color: "#111",
-              margin: "0 0 22px",
-              fontWeight: "700",
-            }}
-          >
+          <h1 style={{ fontSize: "60px", color: "#111", fontWeight: "700" }}>
             UI / UX Design
           </h1>
 
-          <p
-            style={{
-              color: "#666",
-              fontSize: "18px",
-              lineHeight: "1.8",
-              marginBottom: "6px",
-            }}
-          >
-            I create modern and minimal digital experiences with strong user
-            flow and clean interface systems.
-          </p>
-
-          <p
-            style={{
-              color: "#888",
-              fontSize: "18px",
-              lineHeight: "1.8",
-            }}
-          >
+          <p style={{ color: "#666", fontSize: "18px" }}>
             Click any project below to open case study.
           </p>
         </div>
 
+        {/* PROJECT GRID */}
         <div
           style={{
             display: "grid",
@@ -79,9 +49,11 @@ function UIProject_Component() {
           }}
         >
           {projects.map((project) => (
-            <div
+            <motion.div
               key={project.id}
               onClick={() => setSelectedProject(project)}
+              whileHover={{ scale: 1.05, y: -8 }}
+              transition={{ duration: 0.3 }}
               style={{
                 position: "relative",
                 width: "100%",
@@ -100,189 +72,124 @@ function UIProject_Component() {
                   width: "100%",
                   height: "100%",
                   objectFit: "cover",
-                  display: "block",
                 }}
               />
 
               <div
                 style={{
                   position: "absolute",
-                  inset: "0",
+                  inset: 0,
                   background:
-                    "linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.1), transparent)",
+                    "linear-gradient(to top, rgba(0,0,0,0.8), transparent)",
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "flex-end",
                   padding: "24px",
                 }}
               >
-                <p
-                  style={{
-                    color: "#ddd",
-                    fontSize: "11px",
-                    letterSpacing: "3px",
-                    marginBottom: "10px",
-                  }}
-                >
-                  UI / UX
-                </p>
-
-                <h2
-                  style={{
-                    color: "#fff",
-                    fontSize: "30px",
-                    fontWeight: "600",
-                    margin: "0 0 10px",
-                  }}
-                >
+                <h2 style={{ color: "#fff", fontSize: "24px" }}>
                   {project.title}
                 </h2>
 
-                <span
-                  style={{
-                    color: "#f2f2f2",
-                    fontSize: "14px",
-                  }}
-                >
+                <span style={{ color: "#f2f2f2", fontSize: "14px" }}>
                   View Project →
                 </span>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
 
-      {selectedProject && (
-        <div
-          style={{
-            position: "fixed",
-            inset: "0",
-            background: "#f5f5f2",
-            zIndex: "9999",
-            overflowY: "auto",
-          }}
-        >
-          <button
-            onClick={() => setSelectedProject(null)}
+      {/* MODAL WITH ANIMATION */}
+      <AnimatePresence>
+        {selectedProject && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
             style={{
               position: "fixed",
-              top: "30px",
-              left: "30px",
-              width: "54px",
-              height: "54px",
-              border: "none",
-              borderRadius: "50%",
-              background: "#111",
-              color: "#fff",
-              fontSize: "18px",
-              cursor: "pointer",
-              zIndex: "10000",
-              boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
+              inset: "0",
+              background: "#f5f5f2",
+              zIndex: 9999,
+              overflowY: "auto",
             }}
           >
-            ←
-          </button>
-
-          <div
-            style={{
-              maxWidth: "1500px",
-              margin: "0 auto",
-              padding: "100px 5vw ",
-            }}
-          >
-            <div
+            {/* BACK BUTTON */}
+            <button
+              onClick={() => setSelectedProject(null)}
               style={{
-                textAlign: "center",
-                marginBottom: "50px",
+                position: "fixed",
+                top: "30px",
+                left: "30px",
+                width: "54px",
+                height: "54px",
+                border: "none",
+                borderRadius: "50%",
+                background: "#111",
+                color: "#fff",
+                fontSize: "18px",
+                cursor: "pointer",
+                zIndex: 10000,
               }}
             >
-              <p
-                style={{
-                  color: "#8d8d8d",
-                  fontSize: "12px",
-                  letterSpacing: "4px",
-                  marginBottom: "16px",
-                }}
-              >
-                CASE STUDY
-              </p>
+              ←
+            </button>
 
-              <h1
-                style={{
-                  fontSize: "clamp(42px, 5vw, 72px)",
-                  color: "#111",
-                  margin: "0",
-                  fontWeight: "700",
-                }}
-              >
+            {/* CONTENT */}
+            <div
+              style={{
+                maxWidth: "1500px",
+                margin: "0 auto",
+                padding: "100px 5vw",
+              }}
+            >
+              <h1 style={{ textAlign: "center", fontSize: "48px" }}>
                 {selectedProject.title}
               </h1>
-              <p
-                style={{
-                  color: "#8d8d8d",
-                  fontSize: "12px",
-                  letterSpacing: "4px",
-                  marginBottom: "16px",
-                }}
-              >
-              {selectedProject.link && (
-                  <a
-                      href={selectedProject.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                  
-                   >
-                 Learn More →
-                  </a>
-                   )}
-              </p>
-            </div>
-            
 
-            <div
-              style={{
-                width: "100%",
-                overflow: "hidden",
-                lineHeight: "0",
-                background: "#fff",
-              }}
-            >
-              {selectedProject.content.map((item, index) => (
-                <div key={index}>
-                  {item.type === "image" ? (
-                    <img
-                      src={item.src}
-                      alt=""
-                      style={{
-                        width: "100%",
-                        display: "block",
-                        margin: "0",
-                        padding: "0",
-                        objectFit: "cover",
-                      }}
-                    />
-                  ) : (
-                    <video
-                      src={item.src}
-                      autoPlay
-                      muted
-                      loop
-                      // controls
-                      style={{
-                        width: "100%",
-                        display: "block",
-                        margin: "0",
-                        padding: "0",
-                        background: "#000",
-                      }}
-                    />
-                  )}
-                </div>
-              ))}
+              {selectedProject.link && (
+                <p style={{ textAlign: "center" }}>
+                  <a
+                    href={selectedProject.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Learn More →
+                  </a>
+                </p>
+              )}
+
+              {/* CONTENT IMAGES / VIDEOS */}
+              <div style={{ background: "#fff" }}>
+                {selectedProject.content.map((item, index) => (
+                  <div key={index}>
+                    {item.type === "image" ? (
+                      <img
+                        src={item.src}
+                        alt=""
+                        style={{
+                          width: "100%",
+                          display: "block",
+                        }}
+                      />
+                    ) : (
+                      <video
+                        src={item.src}
+                        autoPlay
+                        muted
+                        loop
+                        style={{ width: "100%", display: "block" }}
+                      />
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 }
